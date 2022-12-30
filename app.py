@@ -24,6 +24,13 @@ def main():
 	st.sidebar.info('This app is created to predict Customer Churn in Telecommunication Industry')
 	st.sidebar.image(image2)
 	st.title("Predicting Customer Churn")
+	hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+	st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 	if add_selectbox == 'Online':
 		state =st.selectbox('letter code of the US state of customer residence :',['','AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA', 'HI', 'IA','ID',\
 		'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME', 'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM', 'NV',\
