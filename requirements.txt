@@ -2,7 +2,7 @@ numba==0.56.4
 protobuf==3.20.*
 pandas==1.5.2
 numpy==1.18.1
-Pillow==7.2.0
+Pillow
 pycaret==2.1.2
 scikit-learn==0.23.2
 streamlit==1.16.0
