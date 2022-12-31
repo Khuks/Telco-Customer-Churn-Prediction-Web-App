@@ -19,10 +19,10 @@ def main():
 	image2 = Image.open('images/image.png')
 	st.title("Telecommunication Customer Churn Prediction")
 	st.image(image,use_column_width=True)
+	st.sidebar.title("Modes Of Prediction")
 	add_selectbox = st.sidebar.selectbox(
 	"How would you like to predict?",
 	("Online", "Batch"))
-	st.sidebar.title("Modes Of Prediction")
 	st.sidebar.info('This app is created to predict Customer Churn in Telecommunication Industry')
 	st.sidebar.image(image2)
 	#st.title("Predicting Customer Churn")
