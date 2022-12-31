@@ -17,13 +17,14 @@ def main():
 	from PIL import Image
 	image = Image.open('images/churn.png')
 	image2 = Image.open('images/image.png')
-	st.image(image,use_column_width=False)
+	st.title("Predicting Customer Churn")
+	st.image(image,use_column_width=True)
 	add_selectbox = st.sidebar.selectbox(
 	"How would you like to predict?",
 	("Online", "Batch"))
 	st.sidebar.info('This app is created to predict Customer Churn in Telecommunication Industry')
 	st.sidebar.image(image2)
-	st.title("Predicting Customer Churn")
+	#st.title("Predicting Customer Churn")
 	hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
